@@ -10,8 +10,6 @@ MainWindow::MainWindow() : box(),reset_button("Reset")
 	box.pack_start(reset_button);
 	srand(time(0));
 	generate_notes();
-	for (int i=0;i<8;i++)
-		box.pack_start(notes[i]);
 	add(box);
 	box.show();
 	reset_button.show();
