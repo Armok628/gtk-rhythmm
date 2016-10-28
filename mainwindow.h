@@ -9,12 +9,12 @@ class MainWindow : public Gtk::Window
 	public:
 		MainWindow();
 		virtual ~MainWindow();
+		bool debug,rests;
 	protected:
 		void on_reset_clicked();
 		void generate_notes();
 		void draw_notes();
-		float sum;
-		float note_lengths[8];
+		double note_lengths[8];
 		Gtk::Image notes[8];
 		Gtk::Button reset_button;
 		Gtk::Box box;
